@@ -1,0 +1,12 @@
+{% extends 'home.html' %}
+
+   {% block content %}
+    <div class="container mt-4">
+    <h1> Статья: {{get_articles.name}}</h1>
+    <p><a href="/">К статьям </a> </p>
+    
+    <p> Дата создания: {{get_articles.create_date}}</p>
+    <p> Название: {{get_articles.name}}</p>
+    <p> Текст статьи: {{get_articles.text}}</p>
+   {% endblock %}      
+

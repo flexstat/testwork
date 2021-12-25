@@ -1,0 +1,19 @@
+{% extends 'home.html' %}
+
+   {% block content %}
+    <div class="container mt-4">
+    <h1> Регистрация</h1>
+    <p><a href="/">К статьям </a> </p>
+    <div class="col-4">
+         <form id="registr_form" method="post">
+                 {% csrf_token  %}
+                      {{form}}                  
+                      </form>
+ <button form="registr_form" type="submit" class="btn btn-primary mt-4">Зарегестрироваться</button>
+ 
+   
+   </div>
+   
+   
+   {% endblock %}      
+
